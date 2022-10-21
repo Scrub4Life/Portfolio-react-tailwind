@@ -18,8 +18,8 @@ const Home = () => {
             Hello, I'm Avery Blake
           </h2>
           <p className="text-gray-500 py-4 max-w-md">
-            A Web Developer focused on building the Frontend of Websites
-            and Web Applications
+            A Web Developer focused on building the Frontend of Websites and Web
+            Applications
           </p>
           <div>
             <Link
@@ -39,7 +39,7 @@ const Home = () => {
           <img
             src={HeroImage}
             alt="my profile"
-            className="rounded-2xl h-[32rem] w-[32rem] mx-auto "
+            className="rounded-2xl xs:h-[24rem] xs:w-[24rem] lg:h-[32rem] lg:w-[32rem] mx-auto "
           />
         </div>
       </div>
