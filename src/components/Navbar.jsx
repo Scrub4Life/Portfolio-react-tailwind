@@ -19,13 +19,13 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed">
+    <div className="flex justify-between items-center w-full h-20 px-24 text-white bg-black fixed">
       <h1 className="text-5xl font-signature ml-2 cursor-pointer">
         <Link to="home" smooth duration={500}>
           Avery Blake
         </Link>
       </h1>
-
+      {/* list of links */}
       <ul className="hidden md:flex">
         {/* mapping over the navbar links array so they all that the same styles */}
         {links.map(({ id, link }) => (
@@ -40,7 +40,6 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
-
       {/* nav icon accordian */}
       <div
         onClick={() => setNav(!nav)}
@@ -48,7 +47,6 @@ const Navbar = () => {
       >
         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
-
       {/* mobile navbar */}
       {nav && (
         <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 text-gray-500">

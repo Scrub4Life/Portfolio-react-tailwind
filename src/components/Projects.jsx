@@ -1,6 +1,6 @@
 import React from "react";
 // import projects array
-import data from "../data";
+import data from "../projects";
 
 const Projects = () => {
   return (
@@ -17,21 +17,23 @@ const Projects = () => {
         </div>
         {/* projects card */}
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {data.map(({ id, src, link, repo }) => (
+          {data.map(({ id, name, src, link, repo }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
                 alt=""
                 className="rounded-md duration-200 hover:scale-105"
               />
-              <div className="flex items-center justify-center">
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+              <div className="flex justify-center mt-4">{name}</div>
+              {/* buttons */}
+              <div className="flex items-center justify-center ">
+                <button className="w-1/2 px-6 py-4 mb-2 duration-200 hover:scale-105">
                   <a href={link} target="_blank" rel="noreferrer">
                     View Site
                   </a>
                 </button>
                 <span className="font-bold">|</span>
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                <button className="w-1/2 px-6 py-4 mb-2 duration-200 hover:scale-105">
                   <a href={repo} target="_blank" rel="noreferrer">
                     Code
                   </a>

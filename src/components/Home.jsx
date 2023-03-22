@@ -2,7 +2,7 @@ import React from "react";
 // arrow icon
 import { HiArrowRight } from "react-icons/hi";
 // image
-import HeroImage from "../assets/heroimage.jpg";
+import HeroImage from "../assets/selfie.jpg";
 // react scroll
 import { Link } from "react-scroll";
 
