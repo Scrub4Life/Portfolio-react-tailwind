@@ -10,8 +10,6 @@ import node from "./assets/node.png";
 import bootstrap from "./assets/bootstrap-logo.png";
 // import mysql from "./assets/mysql-logo-1.png";
 // import mongodb from "./assets/mongodb-logo.png";
-// updated node
-
 
 const techs = [
   {
