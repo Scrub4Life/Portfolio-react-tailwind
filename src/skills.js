@@ -3,15 +3,14 @@ import html from "./assets/html.png";
 import css from "./assets/css.png";
 import javascript from "./assets/javascript.png";
 import reactImage from "./assets/react.png";
-import nextjs from "./assets/nextjs.png";
+// import nextjs from "./assets/nextjs.png";
 import github from "./assets/github.png";
 import tailwind from "./assets/tailwind.png";
 import node from "./assets/node.png";
 import bootstrap from "./assets/bootstrap-logo.png";
-import jquery from "./assets/jquery-logo.png";
-import mysql from "./assets/mysql-logo-1.png";
-import mongodb from "./assets/mongodb-logo.png";
-import php from "./assets/php-logo-1.png";
+// import mysql from "./assets/mysql-logo-1.png";
+// import mongodb from "./assets/mongodb-logo.png";
+
 
 const techs = [
   {
@@ -78,12 +77,6 @@ const techs = [
   //   id: 12,
   //   src: mysql,
   //   title: "MySQL",
-  //   style: "shadow-blue-400",
-  // },
-  // {
-  //   id: 13,
-  //   src: php,
-  //   title: "PHP",
   //   style: "shadow-blue-400",
   // },
 ];

@@ -1,6 +1,7 @@
 import React from "react";
 // arrow icon
 import { HiArrowRight } from "react-icons/hi";
+
 // react scroll
 import { Link } from "react-scroll";
 
@@ -26,7 +27,7 @@ const About = () => {
         <p className="text-xl whitespace-pre-line">
           I'm open to <span className="font-bold">Job</span> opportunities where
           I can contribute, learn and grow. If you have a good opportunity that
-          matches my skills and experience then don't hesitate to contact me
+          matches my skills and experience then don't hesitate to contact me.
         </p>
         <div>
           <Link
