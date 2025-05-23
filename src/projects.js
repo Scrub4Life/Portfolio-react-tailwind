@@ -4,7 +4,7 @@ import tipCalculator from "./assets/images/tip calculator.png";
 import ratingComponent from "./assets/images/rating component.png";
 import todoList from "./assets/images/desktop-design-dark.jpg";
 import jobListing from "./assets/images/static job listing.png";
-import dessertMenu from "assets/images/dessert menu.png";
+import dessertMenu from "./assets/images/dessert menu.png";
 
 const projects = [
   {
