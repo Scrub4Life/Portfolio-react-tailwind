@@ -2,7 +2,7 @@ import React from "react";
 // import projects array
 import data from "../projects";
 
-const Projects = () => {
+const Projects = ({ delay }) => {
   return (
     <div
       name="projects"
@@ -16,14 +16,20 @@ const Projects = () => {
           <p className="py-6">Check out some of the websites I've made</p>
         </div>
         {/* projects card */}
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0 ">
           {data.map(({ id, name, src, link, repo }) => (
-            <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
-              <img
-                src={src}
-                alt=""
-                className="rounded-md duration-200 hover:scale-105"
-              />
+            <div
+              key={id}
+              className="shadow-md shadow-gray-600 rounded-lg opacity-0 animate-fadeIn"
+              style={{ animationDelay: `${delay}s` }}
+            >
+              <a href={link} target="_blank" rel="noreferrer">
+                <img
+                  src={src}
+                  alt=""
+                  className="rounded-md duration-200 hover:scale-105"
+                />
+              </a>
               <div className="flex justify-center mt-4">{name}</div>
               {/* buttons */}
               <div className="flex items-center justify-center ">

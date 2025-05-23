@@ -4,8 +4,15 @@ import tipCalculator from "./assets/images/tip calculator.png";
 import ratingComponent from "./assets/images/rating component.png";
 import todoList from "./assets/images/desktop-design-dark.jpg";
 import jobListing from "./assets/images/static job listing.png";
+import dessertMenu from "assets/images/dessert menu.png";
 
 const projects = [
+  {
+    name: "Dessert Menu",
+    src: dessertMenu,
+    link: "https://dessert-menu-three.vercel.app/",
+    repo: "https://github.com/Scrub4Life/Dessert-Menu",
+  },
   {
     name: "Todo List",
     src: todoList,

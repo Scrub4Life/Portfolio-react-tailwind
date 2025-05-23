@@ -14,7 +14,8 @@ import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import SocialLinks from "./components/SocialLinks";
-// updated node version on vercel
+
+import projectsArray from "./projects";
 
 function App() {
   return (
@@ -24,11 +25,14 @@ function App() {
       </header>
       <main>
         <Routes>
-          {/* <Route index element={<Home />} /> */}
+          <Route index element={<Home />} />
           <Route path="home" element={<Home />} />
           {/* <Route path="about" element={<About />} /> */}
           <Route path="skills" element={<Skills />} />
-          <Route path="projects" element={<Projects />} />
+          <Route
+            path="projects"
+            element={<Projects delay={7 + projectsArray.id * 1} />}
+          />
           <Route path="contact" element={<Contact />} />
         </Routes>
         <SocialLinks />
